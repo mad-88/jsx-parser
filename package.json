@@ -1,0 +1,50 @@
+{
+	"name": "jsx-to-object-parser",
+	"version": "0.0.3",
+	"license": "MIT",
+	"types": "build/index.d.ts",
+	"main": "build/index.js",
+	"module": "build/index.es.js",
+	"jsnext:main": "build/index.es.js",
+	"scripts": {
+		"build": "rollup -c",
+		"lint": "standard",
+		"format": "prettier-standard --format",
+		"test": "jest --coverage",
+		"start": "ts-node ./src/index.ts"
+	},
+	"keywords": [
+		"jsx parser",
+		"jsx configuration"
+	],
+	"author": "",
+	"dependencies": {
+		"acorn": "^7.1.1",
+		"acorn-jsx": "^5.2.0",
+		"babel-core": "^6.26.3",
+		"babel-jest": "^23.6.0",
+		"babel-preset-env": "^1.7.0",
+		"recast": "^0.19.1"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/preset-typescript": "^7.9.0",
+		"@babel/standalone": "^7.9.6",
+		"@types/jest": "^25.2.1",
+		"@typescript-eslint/eslint-plugin": "^2.31.0",
+		"@typescript-eslint/parser": "^2.31.0",
+		"eslint": "^6.8.0",
+		"jest": "^26.0.1",
+		"prettier": "2.0.5",
+		"rollup": "^2.8.0",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-peer-deps-external": "^2.2.2",
+		"rollup-plugin-typescript2": "^0.27.0",
+		"standard": "^14.3.3",
+		"standard-prettier": "^1.0.1",
+		"ts-jest": "^25.5.0",
+		"ts-node": "^8.10.1",
+		"typescript": "^3.8.3"
+	}
+}
